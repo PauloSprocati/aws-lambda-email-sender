@@ -30,11 +30,12 @@ Instalar Dependências
 
 Crie um ambiente virtual (opcional) e instale as dependências necessárias:
 
-bash
+```bash
 python3 -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
 pip install -r requirements.txt
+```
 Nota: Certifique-se de incluir o boto3 no arquivo requirements.txt se ainda não estiver lá.
 
 ## Configuração
