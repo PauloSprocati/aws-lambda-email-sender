@@ -36,7 +36,7 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 Nota: Certifique-se de incluir o boto3 no arquivo requirements.txt se ainda não estiver lá.
 
-Configuração
+## Configuração
 Antes de executar ou fazer o deploy da função, você precisará configurar as variáveis de ambiente:
 
 EMAIL_ORIGEM: Endereço de e-mail remetente verificado no SES.
@@ -52,7 +52,7 @@ Adicione as chaves EMAIL_ORIGEM e EMAIL_DESTINO com os respectivos valores.
 
 Salve as alterações.
 
-Teste e Execução
+## Teste e Execução
 Testando no Console da AWS
 No Console da AWS Lambda, crie um evento de teste (pode ser um JSON simples, pois a função utiliza apenas as variáveis de ambiente).
 
@@ -73,5 +73,5 @@ bash
 aws lambda invoke --function-name NomeDaSuaFuncao --payload file://event.json output.json
 Confira o arquivo output.json para a resposta e analise os logs, se necessário.
 
-Considerações Finais
+Considerações finais
 Este repositório reúne não apenas o código-fonte da função Lambda, mas também a documentação completa para que qualquer pessoa possa entender, testar e, se necessário, implantar a solução em sua própria conta AWS. Em futuras atualizações, você poderá integrar pipelines de CI/CD para automatizar o deploy e os testes.
