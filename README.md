@@ -25,6 +25,7 @@ Este projeto consiste em uma função AWS Lambda desenvolvida em Python que envi
    ```bash
    git clone https://github.com/seu-usuario/aws-lambda-email-sender.git
    cd aws-lambda-email-sender
+   ```
 Instalar Dependências
 
 Crie um ambiente virtual (opcional) e instale as dependências necessárias:
@@ -58,10 +59,12 @@ No Console da AWS Lambda, crie um evento de teste (pode ser um JSON simples, poi
 
 Exemplo de evento:
 
-json
-{
-  "test": true
-}
+   ```bash
+   json
+   {
+     "test": true
+   }
+   ```
 Clique em Test e verifique o resultado na resposta e nos logs do CloudWatch.
 
 Testando Localmente
@@ -73,5 +76,5 @@ bash
 aws lambda invoke --function-name NomeDaSuaFuncao --payload file://event.json output.json
 Confira o arquivo output.json para a resposta e analise os logs, se necessário.
 
-Considerações finais
+## Considerações finais
 Este repositório reúne não apenas o código-fonte da função Lambda, mas também a documentação completa para que qualquer pessoa possa entender, testar e, se necessário, implantar a solução em sua própria conta AWS. Em futuras atualizações, você poderá integrar pipelines de CI/CD para automatizar o deploy e os testes.
